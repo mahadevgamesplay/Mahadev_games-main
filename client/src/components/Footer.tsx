@@ -31,13 +31,13 @@ export default function Footer() {
               Your trusted partner for secure gaming platform access and Entertainment ID services. Experience premium gaming with complete peace of mind.
             </p>
             <div className="flex space-x-4">
-              <button 
+              <button
                 onClick={handleWhatsAppClick}
                 className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors"
               >
                 <MessageCircle className="h-6 w-6" />
               </button>
-              <button 
+              <button
                 onClick={handleTelegramClick}
                 className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
               >
@@ -81,6 +81,18 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8">
+
+          {/* ===== START: Disclaimer Section Added ===== */}
+          <div className="text-center mb-8">
+            <p className="text-sm text-gray-400 max-w-4xl mx-auto mb-4 leading-relaxed">
+              <strong className="text-gray-200">Age & Responsibility Disclaimer:</strong> This game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk. You must be 18 years or older to play.
+            </p>
+            <p className="text-sm text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              <strong className="text-gray-200">State-Specific Disclaimer:</strong> Our services are not available for users from the states of Andhra Pradesh, Assam, Nagaland, Orissa, Sikkim, and Telangana.
+            </p>
+          </div>
+          {/* ===== END: Disclaimer Section ===== */}
+
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © 2025 Mahadev Book. All rights reserved.
